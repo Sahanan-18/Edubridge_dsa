@@ -1,0 +1,50 @@
+1:Algorithm of Sum of two numbers:
+Algorithm:
+STEP1:BEGIN
+STEP2:Iterate through each element in the array using a loop.
+STEP3:For every element, check every other element that comes after it.
+STEP4:If the sum of the two elements equals the target, return their indices.
+STEP5:If no such pair is found, print a message saying so.
+STEP6:END
+
+2:Binary Search
+Algorithm:
+STEP1:BEGIN
+STEP2:Initialize low to 0 and high to the last index.
+STEP3:Repeat while low <= high:
+STEP4:Find the middle index mid = (low + high) / 2.
+      If arr[mid] == target, return mid.
+      If arr[mid] < target, search the right half (low = mid + 1).
+      Else search the left half (high = mid - 1).
+      If the loop ends, the element is not present.
+STEP5:END
+
+3: Anagram Check
+Algorithm:
+STEP1:BEGIN
+STEP2:If the lengths of the strings are different, return false.
+STEP3:Create two arrays of size 256 (ASCII characters) and initialize with 0.
+STEP4:Count frequency of each character in both strings.
+STEP5:Compare both frequency arrays. If they match, return true; else false.
+STEP6:END
+
+4: Longest Substring Without Repeating Characters
+Algorithm:
+STEP1:BEGIN
+STEP2:Use a sliding window with a start index.
+STEP3:Maintain a lastIndex array to store the last seen index of characters.
+STEP4:For each character, check if it was already seen in the current window.
+STEP5:Update start to the next of repeated character.
+      Update maximum length during iteration
+STEP6:END
+
+5: Count Palindromic Substrings
+Algorithm:
+STEP1:BEGIN
+STEP2:Use the center expansion approach:
+STEP3:Each character and pair of characters can be a center.
+STEP4:Expand around each center while the substring remains a palindrome.
+STEP5:Count each valid expansion.
+STEP6:END
+
+
